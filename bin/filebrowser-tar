@@ -1,0 +1,6 @@
+#!/bin/bash
+# script for packing folder with TAR
+#cd /srv/filebrowser
+tar cfvz /srv/filebrowser/tmp/filebrowser_gemichelst.tar.gz /srv/filebrowser/ -- exclude=shares -- exclude=tmp
+#mv filebrowser_gemichelst.tar.gz filebrowser/
+exit 0

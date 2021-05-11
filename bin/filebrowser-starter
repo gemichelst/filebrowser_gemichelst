@@ -1,0 +1,33 @@
+#!/bin/bash
+# FILEBROWSER STARTER
+#
+
+# MOUNT DIRS
+#cd /srv/filebrowser/shares
+#ln -s /mnt/stornas
+#ln -s /mnt/stornas/storage1/MUSIC
+#ln -s /mnt/stornas/storage1/VIDEOS/MOVIES
+#ln -s /mnt/stornas/storage1/VIDEOS/SERIEN
+#ln -s /mnt/stornas/storage1/VIDEOS/DOKUS
+#ln -s /mnt/bananadev
+#ln -s /mnt/fritzbox
+#ln -s /mnt/fritzbox/FRITZBOX7530/Online-Speicher /srv/filebrowser/shares/einsundeins
+#ln -s /mnt/readynas
+
+# CD INTO WORKING DIR
+cd /srv/filebrowser
+
+# CONFIG
+#filebrowser config set --address "0.0.0.0"
+#filebrowser config set --port "8088"
+#filebrowser config set --root "/srv/filebrowser/shares"
+#filebrowser config set --database "/srv/filebrowser/filebrowser.db"
+#filebrowser config set --log "/srv/filebrowser/filebrowser.log"
+#filebrowser config set --cert "/srv/filebrowser/cert/cert.pem"
+#filebrowser config set --key "/srv/filebrowser/cert/privkey.pem"
+#filebrowser config set --branding.name "gemichelst.cloud"
+#filebrowser config set --branding.files "/srv/filebrowser/assets"
+#/usr/local/bin/filebrowser config set --branding.disableExternal
+
+# RUN FILEBROWSER
+filebrowser -c /srv/filebrowser/filebrowser.json

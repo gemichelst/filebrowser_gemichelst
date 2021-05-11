@@ -1,0 +1,18 @@
+#=== FRITZBOX ===#
+//fritz.box/FRITZBOX7530 /mnt/fritzbox/FRITZBOX7530 cifs sec=ntlmv2,vers=2.0,user=XXX,pass=XXX 0 0
+
+#=== READYNAS ===#
+readynas1:/media /mnt/readynas/2 nfs rw,hard,intr,rsize=8192,wsize=8192 0 0
+readynas2:/media /mnt/readynas/1 nfs rw,hard,intr,rsize=8192,wsize=8192 0 0
+
+#=== BANANADEV ===#
+bananadev:/media/hdd /mnt/bananadev/hdd nfs4 rw,hard,intr,rsize=8192,wsize=8192 0 0
+
+#=== STORNAS ===#
+stornas:/media/storage1 /mnt/stornas/storage1 nfs4 rw,hard,intr,rsize=8192,wsize=8192 0 0
+stornas:/media/storage2 /mnt/stornas/storage2 nfs4 rw,hard,intr,rsize=8192,wsize=8192 0 0
+
+
+
+
+

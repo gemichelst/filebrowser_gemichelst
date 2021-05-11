@@ -1,0 +1,13 @@
+[Unit]
+Description=FileBrowser
+After=network-online.target
+[Service]
+Type=simple
+User=%i
+WorkingDirectory=/srv/filebrowser
+ExecStart=/srv/filebrowser/bin/filebrowser-starter
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target

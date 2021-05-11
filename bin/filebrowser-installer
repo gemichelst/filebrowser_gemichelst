@@ -1,0 +1,89 @@
+#!/bin/bash
+# FILEBROWSER INSTALLER
+
+# CONFIG
+FILEBROWSER_USR=filebrowser
+FILEBROWSER_DIR=/srv/filebrowser
+FILEBROWSER_SHARES=""
+FILEBROWSER_USER_DIR=".user_default"
+FILEBROWSER_MEDIA_DIR="MEDIA"
+FILEBROWSER_MUSIC_DIR="MUSIC"
+FILEBROWSER_MOVIES_DIR="MOVIES"
+FILEBROWSER_SERIEN_DIR="SERIEN"
+
+
+
+
+
+
+
+
+
+
+############################################################
+###### NO EDIT FROM HERE OR YOU MIGHT BROKE THE SCRIPT #####
+############################################################
+
+# DEFINE SOME VARS
+FILEBROWSER_CUR_DIR=$(pwd)
+
+# INSTALLATION
+echo "FILEBROWSER INSTALLATION"
+echo "by gemichelst (github.com/gemichelst)"
+echo "-------------------------------------"
+echo ""
+echo ">> creating dirs"
+mkdir $FILEBROWSER_DIR
+mkdir -p "$FILEBROWSER_DIR/"
+mkdir -p "$FILEBROWSER_DIR/shares"
+mkdir -p "$FILEBROWSER_DIR/shares/upload"
+mkdir -p "$FILEBROWSER_DIR/shares/$FILEBROWSER_MEDIA_DIR/$FILEBROWSER_MUSIC_DIR"
+mkdir -p "$FILEBROWSER_DIR/shares/$FILEBROWSER_MEDIA_DIR/$FILEBROWSER_MOVIES_DIR"
+mkdir -p "$FILEBROWSER_DIR/shares/$FILEBROWSER_MEDIA_DIR/$FILEBROWSER_SERIEN_DIR"
+mkdir -p "$FILEBROWSER_DIR/shares/$FILEBROWSER_USER_DIR"
+mkdir -p "$FILEBROWSER_DIR/shares/$FILEBROWSER_USER_DIR/$FILEBROWSER_MUSIC_DIR"
+mkdir -p "$FILEBROWSER_DIR/shares/$FILEBROWSER_USER_DIR/$FILEBROWSER_MOVIES_DIR"
+mkdir -p "$FILEBROWSER_DIR/shares/$FILEBROWSER_USER_DIR/$FILEBROWSER_SERIEN_DIR"
+mkdir -p "$FILEBROWSER_DIR/$FILEBROWSER_USER_DIR/DOERD_TRACKS"
+mkdir -p "$FILEBROWSER_DIR/tmp"
+echo ">> creating dirs: done"
+echo " "
+echo " "
+echo ">> copying files"
+cp -R "$FILEBROWSER_CUR_DIR/*" "$FILEBROWSER_DIR/"
+cp /usr/local/bin/filebrowser "$FILEBROWSER_DIR/bin/"
+echo ">> copying files: done"
+echo " "
+echo " "
+echo ">> installing filebrowser"
+curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
+echo ">> installing filebrowser: done"
+echo " "
+echo " "
+echo ">> linking files and dirs"
+ln -s "$FILEBROWSER_DIR/conf/filebrowser.json" "$FILEBROWSER_DIR/filebrowser.json"
+ln -s "$FILEBROWSER_DIR/conf/filebrowser.db" "$FILEBROWSER_DIR/filebrowser.db"
+ln -s /mnt "$FILEBROWSER_DIR/shares/mnt"
+ln -s "$FILEBROWSER_DIR/bin/filebrowser-starter" /usr/local/bin/filebrowser-starter
+ln -s "$FILEBROWSER_DIR/conf/filebrowser@filebrowser.service" /etc/systemd/system/filebrowser@filebrowser.service
+echo ">> linking files: done"
+echo " "
+echo " "
+echo ">> filebrowser user"
+sudo useradd -rm filebrowser -G dialout
+sudo chown -R filebrowser:filebrowser $FILEBROWSER_DIR
+echo ">> filebrowser user: done"
+echo " "
+echo " "
+echo ">> systemd service"
+sudo systemctl daemon-reload
+sudo systemctl enable filebrowser@filebrowser.service
+sudo systemctl start filebrowser@filebrowser.service
+echo ">> systemd service: done"
+echo " "
+echo " "
+echo ">> installation complete"
+echo ">> to start the filebrowser server reboot now or use:"
+echo "sudo systemctl start filebrowser@filebrowser.service"
+
+exit 0

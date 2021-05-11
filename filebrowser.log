@@ -1,0 +1,92 @@
+2021/05/09 21:19:37 Listening on [::]:8088
+2021/05/09 21:20:07 http: TLS handshake error from 192.168.11.60:49720: remote error: tls: unknown certificate
+2021/05/09 21:20:11 http: TLS handshake error from 192.168.11.60:49722: remote error: tls: unknown certificate
+2021/05/09 21:20:12 http: TLS handshake error from 192.168.11.60:49725: remote error: tls: unknown certificate
+2021/05/09 21:20:12 http: TLS handshake error from 192.168.11.60:49726: remote error: tls: unknown certificate
+2021/05/09 21:20:12 http: TLS handshake error from 192.168.11.60:49724: remote error: tls: unknown certificate
+2021/05/09 21:20:12 http: TLS handshake error from 192.168.11.60:49727: remote error: tls: unknown certificate
+2021/05/09 21:21:33 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:21:40 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:21:44 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:21:48 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:21:56 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:21:58 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:21:59 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:23:50 Caught signal terminated: shutting down.
+2021/05/09 21:24:43 Listening on [::]:8088
+2021/05/09 21:24:59 http: TLS handshake error from 192.168.11.60:49754: remote error: tls: unknown certificate
+2021/05/09 21:24:59 http: TLS handshake error from 192.168.11.60:49756: remote error: tls: unknown certificate
+2021/05/09 21:24:59 http: TLS handshake error from 192.168.11.60:49758: remote error: tls: unknown certificate
+2021/05/09 21:24:59 http: TLS handshake error from 192.168.11.60:49757: remote error: tls: unknown certificate
+2021/05/09 21:25:00 http: TLS handshake error from 192.168.11.60:49759: remote error: tls: unknown certificate
+2021/05/09 21:25:07 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:25:22 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:25:31 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:25:33 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:25:37 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:26:09 Caught signal terminated: shutting down.
+2021/05/09 21:32:02 Listening on [::]:8088
+2021/05/09 21:32:06 http: TLS handshake error from 192.168.11.60:49779: remote error: tls: unknown certificate
+2021/05/09 21:32:06 http: TLS handshake error from 192.168.11.60:49778: remote error: tls: unknown certificate
+2021/05/09 21:32:07 http: TLS handshake error from 192.168.11.60:49783: remote error: tls: unknown certificate
+2021/05/09 21:32:07 http: TLS handshake error from 192.168.11.60:49782: remote error: tls: unknown certificate
+2021/05/09 21:32:07 http: TLS handshake error from 192.168.11.60:49784: remote error: tls: unknown certificate
+2021/05/09 21:32:14 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:32:24 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:32:33 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:32:46 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:32:48 /api/login: 403 192.168.11.60 <nil>
+2021/05/09 21:33:03 Caught signal terminated: shutting down.
+2021/05/09 21:40:44 Listening on [::]:8088
+2021/05/09 21:40:48 http: TLS handshake error from 192.168.11.60:49809: remote error: tls: unknown certificate
+2021/05/09 21:40:48 http: TLS handshake error from 192.168.11.60:49811: remote error: tls: unknown certificate
+2021/05/09 21:40:48 http: TLS handshake error from 192.168.11.60:49813: remote error: tls: unknown certificate
+2021/05/09 21:40:48 http: TLS handshake error from 192.168.11.60:49812: remote error: tls: unknown certificate
+2021/05/09 21:40:48 http: TLS handshake error from 192.168.11.60:49814: remote error: tls: unknown certificate
+2021/05/09 21:57:30 http: TLS handshake error from 192.168.11.60:49885: remote error: tls: unknown certificate
+2021/05/09 21:57:30 http: TLS handshake error from 192.168.11.60:49887: remote error: tls: unknown certificate
+2021/05/09 21:57:31 http: TLS handshake error from 192.168.11.60:49888: remote error: tls: unknown certificate
+2021/05/09 21:57:31 http: TLS handshake error from 192.168.11.60:49890: remote error: tls: unknown certificate
+2021/05/09 21:57:31 http: TLS handshake error from 192.168.11.60:49889: remote error: tls: unknown certificate
+2021/05/09 22:20:23 http: TLS handshake error from 192.168.11.60:49992: remote error: tls: unknown certificate
+2021/05/09 22:21:07 http: TLS handshake error from 192.168.11.60:50005: remote error: tls: unknown certificate
+2021/05/09 22:21:07 http: TLS handshake error from 192.168.11.60:50004: remote error: tls: unknown certificate
+2021/05/09 22:21:09 http: TLS handshake error from 192.168.11.60:50017: remote error: tls: unknown certificate
+2021/05/09 22:21:09 http: TLS handshake error from 192.168.11.60:50016: remote error: tls: unknown certificate
+2021/05/09 22:21:09 http: TLS handshake error from 192.168.11.60:50018: remote error: tls: unknown certificate
+2021/05/09 22:21:10 http: TLS handshake error from 192.168.11.60:50025: remote error: tls: unknown certificate
+2021/05/09 23:10:15 http: TLS handshake error from 192.168.11.60:50335: remote error: tls: unknown certificate
+2021/05/09 23:10:15 http: TLS handshake error from 192.168.11.60:50336: remote error: tls: unknown certificate
+2021/05/09 23:10:15 http: TLS handshake error from 192.168.11.60:50339: remote error: tls: unknown certificate
+2021/05/09 23:10:15 http: TLS handshake error from 192.168.11.60:50342: remote error: tls: unknown certificate
+2021/05/09 23:10:15 http: TLS handshake error from 192.168.11.60:50343: remote error: tls: unknown certificate
+2021/05/09 23:10:17 http: TLS handshake error from 192.168.11.60:50357: remote error: tls: unknown certificate
+2021/05/09 23:10:17 http: TLS handshake error from 192.168.11.60:50358: remote error: tls: unknown certificate
+2021/05/09 23:10:21 http: TLS handshake error from 192.168.11.60:50373: remote error: tls: unknown certificate
+2021/05/09 23:17:11 http: TLS handshake error from 192.168.11.60:51952: remote error: tls: unknown certificate
+2021/05/09 23:17:12 http: TLS handshake error from 192.168.11.60:51955: remote error: tls: unknown certificate
+2021/05/09 23:17:12 http: TLS handshake error from 192.168.11.60:51958: remote error: tls: unknown certificate
+2021/05/09 23:17:12 http: TLS handshake error from 192.168.11.60:51954: remote error: tls: unknown certificate
+2021/05/09 23:17:12 http: TLS handshake error from 192.168.11.60:51956: remote error: tls: unknown certificate
+2021/05/09 23:17:12 http: TLS handshake error from 192.168.11.60:51957: remote error: tls: unknown certificate
+2021/05/09 23:17:17 /api/renew: 403 192.168.11.60 <nil>
+2021/05/09 23:26:43 Caught signal terminated: shutting down.
+2021/05/09 23:27:12 Listening on [::]:8088
+2021/05/09 23:29:33 open /srv/filebrowser/shares/einsundeins/._Projects: stale NFS file handle
+2021/05/09 23:29:35 open /srv/filebrowser/shares/einsundeins/._TRACKS: stale NFS file handle
+2021/05/09 23:30:19 df17U1V7: 401 88.130.217.204 <nil>
+2021/05/09 23:31:03 user: gemichelst, home dir: [.].
+2021/05/09 23:31:03 /api/users: 500 88.130.217.204 the resource already exists
+2021/05/09 23:32:41 user: upload, home dir: [./upload/].
+2021/05/10 00:18:32 /api/renew: 403 88.130.217.204 <nil>
+2021/05/10 00:20:35 /api/renew: 403 88.130.217.204 <nil>
+2021/05/10 00:21:37 /api/renew: 403 88.130.217.204 <nil>
+2021/05/10 09:27:26 Listening on [::]:8088
+2021/05/10 09:27:34 /api/renew: 403 89.244.124.4 <nil>
+2021/05/10 09:27:48 open /srv/filebrowser/shares/MOVIES: no such file or directory
+2021/05/10 09:27:48 open /srv/filebrowser/shares/MUSIC: no such file or directory
+2021/05/10 09:27:48 open /srv/filebrowser/shares/SERIEN: no such file or directory
+2021/05/10 09:27:48 open /srv/filebrowser/shares/einsundeins: no such file or directory
+2021/05/11 20:49:58 Listening on [::]:8088
+2021/05/11 20:51:58 /api/renew: 403 88.130.223.166 <nil>
+2021/05/11 20:52:04 open /srv/filebrowser/shares/einsundeins: no such file or directory

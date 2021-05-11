@@ -1,6 +1,6 @@
 # filebrowser@gemichelst
 
-![TDHUB](./assets/raw/logo-nc-gemichelst-white-new-transparent-square@1x.png)
+![GEMICHELSTCLOUD](./assets/raw/logo-nc-gemichelst-white-new-transparent-square@1x.png)
 
 filebrowser for armv7 (rpi,bpi etc) with install script, customized design and configuration
 

@@ -37,12 +37,16 @@ body {
 header {
     background-color: unset !important;
     box-shadow: rgb(0 0 0 / 25%) 0px 7px 10px !important;
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25));
-    background-size: 600% 600%;
+    /*background: linear-gradient(270deg, rgba(0,0,0,0.25), rgba(0,0,0,0.75), rgba(0,0,0,0.5), rgba(0,0,0,0.25));
+  background-size: 600% 600%;*/
 
-    -webkit-animation: gradientAni 30s ease infinite;
-    -moz-animation: gradientAni 30s ease infinite;
-    animation: gradientAni 30s ease infinite;
+    background-image: url(img/backgrounds/background-texture-1.jpg) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+
+    /*-webkit-animation: gradientAni 30s ease infinite;
+  -moz-animation: gradientAni 30s ease infinite;
+  animation: gradientAni 30s ease infinite;*/
 }
 
 #dropdown.active {
@@ -111,11 +115,14 @@ nav .action:active {
 }
 
 #dropdown .action:hover {
+    /*background-color: var(--blue_100);
+  border: 4px solid var(--blue) !important;*/
     background-color: unset !important;
     color: var(--white) !important;
     transform: scale(1.15)rotate(360deg);
     box-shadow: rgb(255 255 255 / 85%) 0px 0px 10px;
     background: linear-gradient(270deg, var(--blue_025), var(--blue_050), var(--blue_075), var(--blue_100), var(--blue_075), var(--blue_050), var(--blue_025), var(--white_025), var(--white_075), var(--white_050), var(--white_025));
+    /*background: radial-gradient(var(--blue_025), var(--blue_050), var(--blue_075), var(--blue_100), var(--blue_075), var(--blue_050), var(--blue_025), var(--white_025), var(--white_075), var(--white_050), var(--white_025));*/
     background-size: 600% 100%;
     -webkit-animation: gradientAni 5s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
     -moz-animation: gradientAni 5s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;

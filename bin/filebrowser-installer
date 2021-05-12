@@ -4,8 +4,9 @@
 # CONFIG
 FILEBROWSER_USR=filebrowser
 FILEBROWSER_DIR=/srv/filebrowser
-FILEBROWSER_SHARES=""
-FILEBROWSER_USER_DIR=".user_default"
+FILEBROWSER_ENV="filebrowser.env"
+FILEBROWSER_SHARES="shares"
+FILEBROWSER_USR_DIR=".user_default"
 FILEBROWSER_MEDIA_DIR="MEDIA"
 FILEBROWSER_MUSIC_DIR="MUSIC"
 FILEBROWSER_MOVIES_DIR="MOVIES"
@@ -26,6 +27,7 @@ FILEBROWSER_SERIEN_DIR="SERIEN"
 
 # DEFINE SOME VARS
 FILEBROWSER_CUR_DIR=$(pwd)
+FILEBROWSER_CONF_DIR="$FILEBROWSER_DIR/conf"
 
 # INSTALLATION
 echo "FILEBROWSER INSTALLATION"
@@ -44,7 +46,7 @@ mkdir -p "$FILEBROWSER_DIR/shares/$FILEBROWSER_USER_DIR"
 mkdir -p "$FILEBROWSER_DIR/shares/$FILEBROWSER_USER_DIR/$FILEBROWSER_MUSIC_DIR"
 mkdir -p "$FILEBROWSER_DIR/shares/$FILEBROWSER_USER_DIR/$FILEBROWSER_MOVIES_DIR"
 mkdir -p "$FILEBROWSER_DIR/shares/$FILEBROWSER_USER_DIR/$FILEBROWSER_SERIEN_DIR"
-mkdir -p "$FILEBROWSER_DIR/$FILEBROWSER_USER_DIR/DOERD_TRACKS"
+mkdir -p "$FILEBROWSER_DIR/$FILEBROWSER_USR_DIR/DOERD_TRACKS"
 mkdir -p "$FILEBROWSER_DIR/tmp"
 echo ">> creating dirs: done"
 echo " "
@@ -81,6 +83,30 @@ sudo systemctl daemon-reload
 sudo systemctl enable filebrowser@filebrowser.service
 sudo systemctl start filebrowser@filebrowser.service
 echo ">> systemd service: done"
+echo " "
+echo " "
+echo ">> filebrowser.env"
+FILEBROWSER_ENV_FILE="$FILEBROWSER_CONF_DIR/$FILEBROWSER_ENV"
+rm $FILEBROWSER_ENV_FILE
+touch $FILEBROWSER_ENV_FILE
+echo "export FILEBROWSER_DIR=$FILEBROWSER_DIR;" >> $FILEBROWSER_ENV_FILE
+echo "export FILEBROWSER_USR=$FILEBROWSER_USR;" >> $FILEBROWSER_ENV_FILE
+echo "export FILEBROWSER_USR_DIR=$FILEBROWSER_USR_DIR;" >> $FILEBROWSER_ENV_FILE
+echo "export FILEBROWSER_STARTER=$FILEBROWSER_DIR/bin/filebrowser-starter;" >> $FILEBROWSER_ENV_FILE
+echo "export FILEBROWSER_ENV_FILE=$FILEBROWSER_ENV_FILE;" >> $FILEBROWSER_ENV_FILE
+echo "export FILEBROWSER_BIN=$FILEBROWSER_DIR/bin;" >> $FILEBROWSER_ENV_FILE
+echo "export PATH=$FILEBROWSER_DIR/bin:$PATH;" >> $FILEBROWSER_ENV_FILE
+echo ">> filebrowser.env: done"
+echo " "
+echo " "
+echo ">> set permissions for user $FILEBROWSER_USR"
+sudo chown -R $FILEBROWSER_USR:$FILEBROWSER_USR $FILEBROWSER_DIR
+echo ">> set permissions for user $FILEBROWSER_USR: done"
+echo " "
+echo " "
+echo ">> autoload $FILEBROWSER_ENV into .profile"
+echo sudo echo "source $FILEBROWSER_ENV_FILE" >> "/home/$FILEBROWSER_USR/.profile"
+echo ">> autoload $FILEBROWSER_ENV into .profile: done"
 echo " "
 echo " "
 echo ">> installation complete"

@@ -179,3 +179,91 @@
 2021/05/12 07:04:16 open /srv/filebrowser/shares/einsundeins/._Projects: stale NFS file handle
 2021/05/12 07:04:16 open /srv/filebrowser/shares/einsundeins/._TRACKS: stale NFS file handle
 2021/05/12 07:23:41 /api/renew: 403 88.130.220.144 <nil>
+2021/05/12 09:27:56 js/custom.js: 500 88.130.220.144 open js/custom.js: file does not exist
+2021/05/12 09:29:22 custom.js: 500 88.130.220.144 open custom.js: file does not exist
+2021/05/12 09:53:58 files/filebrowser-root/assets/custom.js: 500 88.130.220.144 open files/filebrowser-root/assets/custom.js: file does not exist
+2021/05/12 09:54:01 files/filebrowser-root/assets/custom.js: 500 88.130.220.144 open files/filebrowser-root/assets/custom.js: file does not exist
+2021/05/12 12:35:41 /filebrowser-root/: 403 88.130.220.144 <nil>
+2021/05/12 12:35:47 /: 403 88.130.220.144 <nil>
+2021/05/12 12:36:02 /api/renew: 403 88.130.220.144 <nil>
+2021/05/12 13:43:31 Listening on [::]:8089
+2021/05/12 13:45:18 http: TLS handshake error from 192.168.11.60:60989: remote error: tls: unknown certificate
+2021/05/12 13:45:18 http: TLS handshake error from 192.168.11.60:60995: remote error: tls: unknown certificate
+2021/05/12 13:45:19 http: TLS handshake error from 192.168.11.60:60999: remote error: tls: unknown certificate
+2021/05/12 13:45:19 http: TLS handshake error from 192.168.11.60:60996: remote error: tls: unknown certificate
+2021/05/12 13:45:19 http: TLS handshake error from 192.168.11.60:60997: remote error: tls: unknown certificate
+2021/05/12 13:45:19 http: TLS handshake error from 192.168.11.60:60998: remote error: tls: unknown certificate
+2021/05/12 13:45:19 custom.js: 500 192.168.11.60 open custom.js: file does not exist
+2021/05/12 13:52:11 http: TLS handshake error from 192.168.11.60:62668: remote error: tls: unknown certificate
+2021/05/12 13:52:11 http: TLS handshake error from 192.168.11.60:62674: remote error: tls: unknown certificate
+2021/05/12 13:52:12 custom.js: 500 192.168.11.60 open custom.js: file does not exist
+2021/05/12 13:52:12 http: TLS handshake error from 192.168.11.60:62676: remote error: tls: unknown certificate
+2021/05/12 13:52:12 http: TLS handshake error from 192.168.11.60:62675: remote error: tls: unknown certificate
+2021/05/12 13:52:12 http: TLS handshake error from 192.168.11.60:62678: remote error: tls: unknown certificate
+2021/05/12 13:52:12 http: TLS handshake error from 192.168.11.60:62677: remote error: tls: unknown certificate
+2021/05/12 13:56:39 Caught signal interrupt: shutting down.
+2021/05/12 13:56:39 accept tcp [::]:8089: use of closed network connection
+2021/05/12 14:19:57 open /srv/filebrowser/shares/filebrowser-root/bin/filebrowser-dev: no such file or directory
+2021/05/12 14:20:37 Listening on [::]:8089
+2021/05/12 14:20:45 http: TLS handshake error from 192.168.11.60:53230: remote error: tls: unknown certificate
+2021/05/12 14:20:46 http: TLS handshake error from 192.168.11.60:53232: remote error: tls: unknown certificate
+2021/05/12 14:20:46 http: TLS handshake error from 192.168.11.60:53236: remote error: tls: unknown certificate
+2021/05/12 14:20:46 http: TLS handshake error from 192.168.11.60:53235: remote error: tls: unknown certificate
+2021/05/12 14:20:46 http: TLS handshake error from 192.168.11.60:53233: remote error: tls: unknown certificate
+2021/05/12 14:20:46 js/custom.js: 500 192.168.11.60 open js/custom.js: file does not exist
+2021/05/12 14:20:46 http: TLS handshake error from 192.168.11.60:53234: remote error: tls: unknown certificate
+2021/05/12 14:21:26 js/custom.js: 500 192.168.11.60 open js/custom.js: file does not exist
+2021/05/12 14:21:26 js/custom.js: 500 192.168.11.60 open js/custom.js: file does not exist
+2021/05/12 14:21:38 /api/login: 403 192.168.11.60 <nil>
+2021/05/12 14:22:52 js/custom.js: 500 192.168.11.60 open js/custom.js: file does not exist
+2021/05/12 14:23:34 /: 403 192.168.11.60 <nil>
+2021/05/12 14:24:25 js/custom.js: 500 192.168.11.60 open js/custom.js: file does not exist
+2021/05/12 14:24:25 js/custom.js: 500 192.168.11.60 open js/custom.js: file does not exist
+2021/05/12 14:24:25 /static/js/custom.js: 404 192.168.11.60 stat /srv/filebrowser/shares/static/js/custom.js: no such file or directory
+2021/05/12 14:24:45 js/custom.js: 500 192.168.11.60 open js/custom.js: file does not exist
+2021/05/12 14:24:50 js/custom.js: 500 192.168.11.60 open js/custom.js: file does not exist
+2021/05/12 14:24:54 js/custom.js: 500 192.168.11.60 open js/custom.js: file does not exist
+2021/05/12 14:24:55 js/custom.js: 500 192.168.11.60 open js/custom.js: file does not exist
+2021/05/12 14:24:55 js/custom.js: 500 192.168.11.60 open js/custom.js: file does not exist
+2021/05/12 14:24:55 /static/js/custom.js: 404 192.168.11.60 stat /srv/filebrowser/shares/static/js/custom.js: no such file or directory
+2021/05/12 14:25:28 js/custom.js: 500 192.168.11.60 open js/custom.js: file does not exist
+2021/05/12 14:25:28 js/custom.js: 500 192.168.11.60 open js/custom.js: file does not exist
+2021/05/12 14:48:41 Caught signal interrupt: shutting down.
+2021/05/12 14:49:58 Listening on [::]:8089
+2021/05/12 14:50:03 http: TLS handshake error from 192.168.11.60:60482: remote error: tls: unknown certificate
+2021/05/12 14:50:04 http: TLS handshake error from 192.168.11.60:60488: remote error: tls: unknown certificate
+2021/05/12 14:50:04 http: TLS handshake error from 192.168.11.60:60490: remote error: tls: unknown certificate
+2021/05/12 14:50:04 http: TLS handshake error from 192.168.11.60:60489: remote error: tls: unknown certificate
+2021/05/12 14:50:05 http: TLS handshake error from 192.168.11.60:60492: remote error: tls: unknown certificate
+2021/05/12 14:50:05 http: TLS handshake error from 192.168.11.60:60491: remote error: tls: unknown certificate
+2021/05/12 14:51:13 http: TLS handshake error from 192.168.11.60:60786: remote error: tls: unknown certificate
+2021/05/12 14:52:16 Caught signal interrupt: shutting down.
+2021/05/12 14:52:16 accept tcp [::]:8089: use of closed network connection
+2021/05/12 14:53:06 open /srv/filebrowser/shares/filebrowser-root/bin/filebrowser-dev: no such file or directory
+2021/05/12 14:54:08 Listening on [::]:8089
+2021/05/12 14:54:13 http: TLS handshake error from 192.168.11.60:61513: remote error: tls: unknown certificate
+2021/05/12 14:54:13 http: TLS handshake error from 192.168.11.60:61515: remote error: tls: unknown certificate
+2021/05/12 14:54:14 http: TLS handshake error from 192.168.11.60:61518: remote error: tls: unknown certificate
+2021/05/12 14:54:14 http: TLS handshake error from 192.168.11.60:61516: remote error: tls: unknown certificate
+2021/05/12 14:54:14 http: TLS handshake error from 192.168.11.60:61517: remote error: tls: unknown certificate
+2021/05/12 14:54:14 js/custom.js: 500 192.168.11.60 open js/custom.js: file does not exist
+2021/05/12 14:54:14 http: TLS handshake error from 192.168.11.60:61519: remote error: tls: unknown certificate
+2021/05/12 14:55:04 Caught signal interrupt: shutting down.
+2021/05/12 14:55:04 accept tcp [::]:8089: use of closed network connection
+2021/05/12 14:55:25 open /srv/filebrowser/shares/filebrowser-root/bin/filebrowser-dev: no such file or directory
+2021/05/12 14:55:46 Listening on [::]:8089
+2021/05/12 14:55:51 http: TLS handshake error from 192.168.11.60:61919: remote error: tls: unknown certificate
+2021/05/12 14:55:51 http: TLS handshake error from 192.168.11.60:61921: remote error: tls: unknown certificate
+2021/05/12 14:55:51 http: TLS handshake error from 192.168.11.60:61923: remote error: tls: unknown certificate
+2021/05/12 14:55:52 http: TLS handshake error from 192.168.11.60:61925: remote error: tls: unknown certificate
+2021/05/12 14:55:52 http: TLS handshake error from 192.168.11.60:61922: remote error: tls: unknown certificate
+2021/05/12 14:55:52 http: TLS handshake error from 192.168.11.60:61924: remote error: tls: unknown certificate
+2021/05/12 14:56:44 Caught signal interrupt: shutting down.
+2021/05/12 14:57:10 open /srv/filebrowser/shares/filebrowser-root/bin/filebrowser-dev: no such file or directory
+2021/05/12 14:57:29 Listening on [::]:8089
+2021/05/12 14:57:34 http: TLS handshake error from 192.168.11.60:62348: remote error: tls: unknown certificate
+2021/05/12 14:57:34 http: TLS handshake error from 192.168.11.60:62350: remote error: tls: unknown certificate
+2021/05/12 14:57:35 http: TLS handshake error from 192.168.11.60:62354: remote error: tls: unknown certificate
+2021/05/12 14:57:35 http: TLS handshake error from 192.168.11.60:62351: remote error: tls: unknown certificate
+2021/05/12 14:57:35 http: TLS handshake error from 192.168.11.60:62352: remote error: tls: unknown certificate
+2021/05/12 14:57:35 http: TLS handshake error from 192.168.11.60:62353: remote error: tls: unknown certificate

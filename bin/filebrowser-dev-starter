@@ -1,0 +1,24 @@
+#!/bin/bash
+# FILEBROWSER STARTER
+#
+
+# MOUNT DIRS
+#cd /srv/filebrowser/shares
+
+# CD INTO WORKING DIR
+cd /srv/filebrowser
+
+# CONFIG
+#filebrowser config set --address "0.0.0.0"
+#filebrowser-dev config set --port "8089"
+#filebrowser config set --root "/srv/filebrowser/shares"
+#filebrowser config set --database "/srv/filebrowser/filebrowser.db"
+#filebrowser config set --log "/srv/filebrowser/filebrowser.log"
+#filebrowser config set --cert "/srv/filebrowser/cert/cert.pem"
+#filebrowser config set --key "/srv/filebrowser/cert/privkey.pem"
+#filebrowser config set --branding.name "gemichelst.cloud"
+#filebrowser config set --branding.files "/srv/filebrowser/assets"
+#/usr/local/bin/filebrowser config set --branding.disableExternal
+
+# RUN FILEBROWSER
+filebrowser-dev -c "/srv/filebrowser/filebrowser-dev.json" -d "./filebrowser-dev.db" -p 8089

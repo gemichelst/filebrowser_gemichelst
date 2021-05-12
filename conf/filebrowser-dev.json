@@ -1,0 +1,67 @@
+{
+    "settings": {
+        "key": "YZ8XvHTCHfKR2lXbAfmXnsPl52RhCE/jzVZlMlDGy4ccboo2ovvg7ZhaqfEqjFYngjZWS+BP6rdAIgEhb7//RA==",
+        "signup": false,
+        "createUserDir": false,
+        "defaults": {
+            "scope": ".",
+            "locale": "en",
+            "viewMode": "list",
+            "singleClick": false,
+            "sorting": {
+                "by": "name",
+                "asc": false
+            },
+            "perm": {
+                "admin": false,
+                "execute": true,
+                "create": true,
+                "rename": true,
+                "modify": true,
+                "delete": true,
+                "share": true,
+                "download": true
+            },
+            "commands": [],
+            "hideDotfiles": false
+        },
+        "authMethod": "json",
+        "branding": {
+            "name": "gemichelst.cloud DEV",
+            "disableExternal": false,
+            "files": "/srv/filebrowser/assets",
+            "theme": ""
+        },
+        "commands": {
+            "after_copy": [],
+            "after_delete": [],
+            "after_rename": [],
+            "after_save": [],
+            "after_upload": [],
+            "before_copy": [],
+            "before_delete": [],
+            "before_rename": [],
+            "before_save": [],
+            "before_upload": []
+        },
+        "shell": [],
+        "rules": []
+    },
+    "server": {
+        "root": "/srv/filebrowser/shares",
+        "baseURL": "",
+        "socket": "",
+        "tlsKey": "/srv/filebrowser/cert/privkey.pem",
+        "tlsCert": "/srv/filebrowser/cert/cert.pem",
+        "port": "8089",
+        "address": "0.0.0.0",
+        "log": "/srv/filebrowser/filebrowser.log",
+        "enableThumbnails": true,
+        "resizePreview": false,
+        "enableExec": false,
+        "typeDetectionByHeader": true
+    },
+    "auther": {
+        "recaptcha": null
+    }
+}

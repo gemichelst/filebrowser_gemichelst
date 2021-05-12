@@ -66,6 +66,7 @@ ln -s "$FILEBROWSER_DIR/conf/filebrowser.db" "$FILEBROWSER_DIR/filebrowser.db"
 ln -s /mnt "$FILEBROWSER_DIR/shares/mnt"
 ln -s "$FILEBROWSER_DIR/bin/filebrowser-starter" /usr/local/bin/filebrowser-starter
 ln -s "$FILEBROWSER_DIR/conf/filebrowser@filebrowser.service" /etc/systemd/system/filebrowser@filebrowser.service
+ln -s $FILEBROWSER_DIR "$FILEBROWSER_DIR/shares/filebrowser-root"
 echo ">> linking files: done"
 echo " "
 echo " "

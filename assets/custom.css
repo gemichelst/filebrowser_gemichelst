@@ -3,185 +3,185 @@
 /************/
 
 :root {
-    --black_100: rgba(0, 0, 0, 1);
-    --black_075: rgba(0, 0, 0, .75);
-    --black_050: rgba(0, 0, 0, .50);
-    --black_025: rgba(0, 0, 0, .25);
-    --black_015: rgba(0, 0, 0, .15);
-    --black_005: rgba(0, 0, 0, .05);
-    --white: rgba(255, 255, 255, .9);
-    --white_100: rgba(255, 255, 255, 1);
-    --white_075: rgba(255, 255, 255, .75);
-    --white_050: rgba(255, 255, 255, .50);
-    --white_025: rgba(255, 255, 255, .25);
-    --white_015: rgba(255, 255, 255, .15);
-    --blue_100: rgba(33, 150, 243, 1);
-    --blue_075: rgba(33, 150, 243, .75);
-    --blue_050: rgba(33, 150, 243, .50);
-    --blue_025: rgba(33, 150, 243, .25);
-    --blue_015: rgba(33, 150, 243, .15);
-    --blue_005: rgba(33, 150, 243, .05);
+  --black_100: rgba(0,0,0,1);
+  --black_075: rgba(0,0,0,.75);
+  --black_050: rgba(0,0,0,.50);
+  --black_025: rgba(0,0,0,.25);
+  --black_015: rgba(0,0,0,.15);
+  --black_005: rgba(0,0,0,.05);
+  --white: rgba(255,255,255,.9);
+  --white_100: rgba(255,255,255,1);
+  --white_075: rgba(255,255,255,.75);
+  --white_050: rgba(255,255,255,.50);
+  --white_025: rgba(255,255,255,.25);
+  --white_015: rgba(255,255,255,.15);
+  --blue_100: rgba(33,150,243,1);
+  --blue_075: rgba(33,150,243,.75);
+  --blue_050: rgba(33,150,243,.50);
+  --blue_025: rgba(33,150,243,.25);
+  --blue_015: rgba(33,150,243,.15);
+  --blue_005: rgba(33,150,243,.05);
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    background-image: url('img/backgrounds/background-texture-13.jpg') !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: bottom center !important;
-    background-color: transparent !important;
-    color: var(--black_075) !important;
+  width: 100%;
+  height: 100vh;
+  background-image: url('img/backgrounds/background-texture-13.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: bottom center !important;
+  background-color: transparent !important;
+  color: var(--black_075) !important;
 }
 
 header {
-    background-color: unset !important;
-    box-shadow: rgb(0 0 0 / 25%) 0px 7px 10px !important;
-    /*background: linear-gradient(270deg, rgba(0,0,0,0.25), rgba(0,0,0,0.75), rgba(0,0,0,0.5), rgba(0,0,0,0.25));
+  background-color: unset !important;
+  box-shadow: rgb(0 0 0 / 25%) 0px 7px 10px !important;
+  /*background: linear-gradient(270deg, rgba(0,0,0,0.25), rgba(0,0,0,0.75), rgba(0,0,0,0.5), rgba(0,0,0,0.25));
   background-size: 600% 600%;*/
+  
+  background-image: url(img/backgrounds/background-texture-1.jpg) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
 
-    background-image: url(img/backgrounds/background-texture-1.jpg) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-
-    /*-webkit-animation: gradientAni 30s ease infinite;
+  /*-webkit-animation: gradientAni 30s ease infinite;
   -moz-animation: gradientAni 30s ease infinite;
   animation: gradientAni 30s ease infinite;*/
 }
 
 #dropdown.active {
-    background-color: unset !important;
-    color: var(--white);
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25));
-    background-size: 600% 600%;
-    -webkit-animation: gradientAni 30s ease infinite;
-    -moz-animation: gradientAni 30s ease infinite;
-    animation: gradientAni 30s ease infinite;
+  background-color: unset !important;
+  color: var(--white);
+  background: linear-gradient(270deg, rgba(0,0,0,0.25), rgba(0,0,0,0.75), rgba(0,0,0,0.5), rgba(0,0,0,0.25));
+  background-size: 600% 600%;
+  -webkit-animation: gradientAni 30s ease infinite;
+  -moz-animation: gradientAni 30s ease infinite;
+  animation: gradientAni 30s ease infinite;
 }
 
 header button {
-    color: var(--white) !important;
+  color: var(--white) !important;
 }
 
 header img {
-    height: 110px !important;
-    transform: scale(1);
-    /*cursor: pointer;*/
-    transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  height: 110px !important;
+  transform: scale(1);
+  /*cursor: pointer;*/
+  transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 
 header img:hover {
-    transform: scale(1.2)rotate(360deg);
+  transform: scale(1.2)rotate(360deg);
 }
 
 #search {
-    display: none !important;
+  display: none !important;
 }
 
 #login {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 #login form img {
-    width: 100% !important;
-    height: 100% !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 #login h1 {
-    display: none !important;
+  display: none !important;
 }
 
 .action {
-    color: var(--black_075);
-    border-left: unset;
-    transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  color: var(--black_075);
+  border-left: unset;
+  transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 nav .action:hover,
 #listing .item:hover {
-    color: var(--blue_100) !important;
-    background-color: var(--black_015) !important;
-    border-left: 3px solid var(--blue);
+  color: var(--blue_100) !important;
+  background-color: var(--black_015) !important;
+  border-left: 3px solid var(--blue);
 }
 
 nav .action:active {
-    color: var(--blue_100) !important;
-    background-color: var(--black_015) !important;
-    border-left: 3px solid var(--blue);
+  color: var(--blue_100) !important;
+  background-color: var(--black_015) !important;
+  border-left: 3px solid var(--blue);
 }
 
 #dropdown .action {
-    /*transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1) !important;*/
+  /*transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1) !important;*/
 }
 
 #dropdown .action:hover {
-    /*background-color: var(--blue_100);
+  /*background-color: var(--blue_100);
   border: 4px solid var(--blue) !important;*/
-    background-color: unset !important;
-    color: var(--white) !important;
-    transform: scale(1.15)rotate(360deg);
-    box-shadow: rgb(255 255 255 / 85%) 0px 0px 10px;
-    background: linear-gradient(270deg, var(--blue_025), var(--blue_050), var(--blue_075), var(--blue_100), var(--blue_075), var(--blue_050), var(--blue_025), var(--white_025), var(--white_075), var(--white_050), var(--white_025));
-    /*background: radial-gradient(var(--blue_025), var(--blue_050), var(--blue_075), var(--blue_100), var(--blue_075), var(--blue_050), var(--blue_025), var(--white_025), var(--white_075), var(--white_050), var(--white_025));*/
-    background-size: 600% 100%;
-    -webkit-animation: gradientAni 5s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
-    -moz-animation: gradientAni 5s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
-    animation: gradientAni 5s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
+  background-color: unset !important;
+  color: var(--white) !important;
+  transform: scale(1.15)rotate(360deg);
+  box-shadow: rgb(255 255 255 / 85%) 0px 0px 10px;
+  background: linear-gradient(270deg, var(--blue_025), var(--blue_050), var(--blue_075), var(--blue_100), var(--blue_075), var(--blue_050), var(--blue_025), var(--white_025), var(--white_075), var(--white_050), var(--white_025));
+  /*background: radial-gradient(var(--blue_025), var(--blue_050), var(--blue_075), var(--blue_100), var(--blue_075), var(--blue_050), var(--blue_025), var(--white_025), var(--white_075), var(--white_050), var(--white_025));*/
+  background-size: 600% 100%;
+  -webkit-animation: gradientAni 5s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
+  -moz-animation: gradientAni 5s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
+  animation: gradientAni 5s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
 }
 
 #dropdown .action i {
-    padding: 1.0em !important;
-    transition: all 0.5s cubic-bezier(0.65, 0.05, 0.36, 1) !important;
+  padding: 1.0em !important;
+  transition: all 0.5s cubic-bezier(0.65, 0.05, 0.36, 1) !important;
 }
 
 #dropdown .action i:hover {
-    padding: .4em !important;
-    transform: scale(1.25)rotate(360deg);
+  padding: .4em !important;
+  transform: scale(1.25)rotate(360deg);
 }
 
 #listing.list {
-    box-shadow: rgb(0 0 0 / 25%) 0px 7px 10px;
+  box-shadow: rgb(0 0 0 / 25%) 0px 7px 10px;
 }
 
 #listing.list .item.header {
-    background: var(--black_015) !important;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+  background: var(--black_015) !important;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 #listing .item .name {
-    text-transform: uppercase;
-    /*font-variant-caps: all-petite-caps;*/
+  text-transform: uppercase;
+  /*font-variant-caps: all-petite-caps;*/
 }
 
 #listing.list .header span {
-    font-variant-caps: all-petite-caps;
+  font-variant-caps: all-petite-caps;
 }
 
 #listing .item {
-    color: var(--black_075) !important;
-    border-left: unset;
-    transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  color: var(--black_075) !important;
+  border-left: unset;
+  transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .credits {
-    display: none !important;
+  display: none !important;
 }
 
 nav {
-    border-right: 1px solid var(--black_005);
-    border-bottom: 1px solid var(--black_005);
-    border-bottom-right-radius: 7px;
-    box-shadow: rgb(0 0 0 / 25%) 7px 7px 10px;
+  border-right: 1px solid var(--black_005);
+  border-bottom: 1px solid var(--black_005);
+  border-bottom-right-radius: 7px;
+  box-shadow: rgb(0 0 0 / 25%) 7px 7px 10px;
 }
 
 nav .action {
-    font-size: 1em !important;
-    padding: 1.5em !important;
+  font-size: 1em !important;
+  padding: 1.5em !important;
 }
 
 nav .action span {
-    font-variant-caps: all-petite-caps;
+  font-variant-caps: all-petite-caps;
 }
 
 /**********/
@@ -190,10 +190,39 @@ nav .action span {
 
 @media (max-width: 736px) {
 
-    #dropdown .action i {
-        padding: .4em !important;
-        transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1) !important;
-    }
+  header .overlay {
+    background-color: var(--black050);
+  }
+  #dropdown {
+    transform: scaleY(1.25)scaleX(0);
+    opacity: 0;
+    transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1),opacity 0.15s cubic-bezier(0.65, 0.05, 0.36, 1) !important;
+  }
+  #dropdown .action {
+    display: contents !important;
+  }
+  #dropdown .action i {
+    padding: .4em !important;
+    transform: rotate(0deg) !important;
+    transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+  #dropdown .action span:not(.counter) {
+    display: none !important;
+  }
+  #dropdown.active {
+    top: 0.25em;
+    right: 0.75em;
+    opacity: 1;
+    transform: scaleY(1.25)scaleX(1.25);
+    /*transform: scaleY(1.25)scaleX(1.25)rotate(360deg);*/
+  }
+  #dropdown.active .action i {
+    transform: rotate(360deg) !important;
+    transition: all 0.5s 0.2s cubic-bezier(0.65, 0.05, 0.36, 1) !important;
+  }
+  .search-button {
+    display: none !important;
+  }
 
 }
 
@@ -203,45 +232,19 @@ nav .action span {
 /* KEYFRAMES */
 /*************/
 @-webkit-keyframes gradientAni {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
-
 @-moz-keyframes gradientAni {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
-
 @keyframes gradientAni {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
+    0% {background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 

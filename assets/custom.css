@@ -10,13 +10,22 @@
   --black_015: rgba(0,0,0,.15);
   --black_005: rgba(0,0,0,.05);
   --white: rgba(255,255,255,.9);
+  --blue_100: rgba(33,150,243,1);
+  --blue_075: rgba(33,150,243,.75);
+  --blue_050: rgba(33,150,243,.50);
+  --blue_025: rgba(33,150,243,.25);
+  --blue_015: rgba(33,150,243,.15);
+  --blue_005: rgba(33,150,243,.05);
 }
 
 body {
+  width: 100%;
+  height: 100vh;
   background-image: url('img/backgrounds/background-texture-13.jpg') !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-position: top center !important;
+  background-position: bottom center !important;
+  /*background-position: top center !important;*/
   background-color: transparent !important;
   color: var(--black_075) !important;
 }
@@ -25,8 +34,19 @@ header {
   background-color: unset !important;
   box-shadow: rgb(0 0 0 / 25%) 0px 7px 10px !important;
   background: linear-gradient(270deg, rgba(0,0,0,0.25), rgba(0,0,0,0.75), rgba(0,0,0,0.5), rgba(0,0,0,0.25));
+  /*background: linear-gradient(270deg, var(--blue_025), var(--blue_075), var(--blue_050), var(--blue_025));*/
   background-size: 600% 600%;
   
+  -webkit-animation: navbarBG 30s ease infinite;
+  -moz-animation: navbarBG 30s ease infinite;
+  animation: navbarBG 30s ease infinite;
+}
+
+#dropdown.active {
+  background-color: unset !important;
+  color: var(--white);
+  background: linear-gradient(270deg, rgba(0,0,0,0.25), rgba(0,0,0,0.75), rgba(0,0,0,0.5), rgba(0,0,0,0.25));
+  background-size: 600% 600%;
   -webkit-animation: navbarBG 30s ease infinite;
   -moz-animation: navbarBG 30s ease infinite;
   animation: navbarBG 30s ease infinite;
@@ -38,7 +58,29 @@ header button {
 
 header img {
   height: 110px !important;
-  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+  /*cursor: pointer;*/
+  transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+
+header img:hover {
+  transform: scale(1.2)rotate(360deg);
+  
+  /*transform: scale(5)rotate(360deg);
+  margin-top: calc(244px);
+  padding-left: calc(25% - 110px);*/
+  
+  /*margin-top: calc(50% + 275px) !important;
+  padding-left: calc(32% - 110px);
+  padding-right: calc(20% - 110px);
+  background-color: var(--black_050);*/
+}
+
+header + header img:hover {
+  background-color: var(--black_075) !important;
+  background: var(--black_075) !important;
+  /*z-index: 1 !important;
+  display: flex !important;*/
 }
 
 #search {
@@ -66,7 +108,7 @@ header img {
 
 .action:hover,
 #listing .item:hover {
-  color: var(--white) !important;
+  color: var(--blue_100) !important;
   background-color: var(--black_015) !important;
   border-left: 3px solid var(--blue);
 }
